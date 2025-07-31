@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: static-website
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: static-website
+  template:
+    metadata:
+      labels:
+        app: static-website
+    spec:
+      containers:
+      - name: static-website
+        image: static-website:latest
+        imagePullPolicy: Never  
+        ports:
+        - containerPort: 80
