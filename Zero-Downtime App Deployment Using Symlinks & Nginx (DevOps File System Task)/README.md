@@ -1,4 +1,4 @@
-# 🚀 **Zero-Downtime App Deployment Using Symlinks & Nginx (DevOps File System Task)**
+# **Zero-Downtime App Deployment Using Symlinks & Nginx (DevOps File System Task)**
 
 This project demonstrates a **real-world DevOps deployment strategy** using:
 
@@ -13,7 +13,7 @@ This method is used by major companies such as **GitHub, Shopify, Airbnb, Netfli
 
 ---
 
-# 📌What This Task Is About**
+# **What This Task Is About**
 
 This task teaches **how to deploy multiple versions of an application** by:
 
@@ -28,7 +28,7 @@ This is exactly how **zero-downtime production deployments** work in DevOps.
 
 ---
 
-# 🎯Why This Task Matters (Real DevOps Use Case)**
+# **Why This Task Matters (Real DevOps Use Case)**
 
 ### ✔ Production applications cannot stop during deployment
 
@@ -54,7 +54,7 @@ This task trains you in **real DevOps responsibilities**.
 
 ---
 
-# 🧠How It Works (High-Level Explanation)**
+# **How It Works (High-Level Explanation)**
 
 ```
 /var/www/myapp
@@ -87,7 +87,7 @@ A symlink flip = zero downtime.
 
 ---
 
-# 🖼Deployment Architecture Diagram**
+# **Deployment Architecture Diagram**
 
 ```
                 ┌────────────────────────────┐
@@ -116,7 +116,7 @@ A symlink flip = zero downtime.
 
 ---
 
-# 🧪Full Step-by-Step Commands**
+# **Full Step-by-Step Commands**
 
 ## **STEP 1 — Create directory structure**
 
@@ -229,9 +229,9 @@ myappctl v2
 
 ---
 
-# 📌Case Study: How Companies Use This in Production**
+# **Case Study: How Companies Use This in Production**
 
-### 🏢 Real example: GitHub
+### Real example: GitHub
 
 GitHub stores each release under:
 
@@ -247,19 +247,19 @@ current → releases/2025-12-12-14-00
 
 Nginx/Unicorn loads the new version without interrupting users.
 
-### 🏢 Shopify / Rails Apps
+### Shopify / Rails Apps
 
 Uses Capistrano (which internally uses `ln -sfn`).
 
-### 🏢 Netflix
+### Netflix
 
 Uses symlink-based switching for certain microservices.
 
-### 🏢 Cloud providers (Heroku, Dokku)
+### Cloud providers (Heroku, Dokku)
 
 They also use versioned folder structures internally.
 
-# 📚 **Notes for Future Revision**
+# **Notes**
 
 * Deployment = switching which version “current” points to
 * Never edit live files directly → always deploy new version
@@ -271,7 +271,7 @@ They also use versioned folder structures internally.
 * Reloading nginx applies changes instantly
 
 
-# 🎉Final Output in Browser**
+# **Final Output in Browser**
 
 After deployment, access:
 
