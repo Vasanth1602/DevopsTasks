@@ -1,7 +1,3 @@
-# 📘 **README.md — Zero-Downtime Deployment Using Symlinks (DevOps FS Task)
-
----
-
 # 🚀 **Zero-Downtime App Deployment Using Symlinks & Nginx (DevOps File System Task)**
 
 This project demonstrates a **real-world DevOps deployment strategy** using:
@@ -17,7 +13,7 @@ This method is used by major companies such as **GitHub, Shopify, Airbnb, Netfli
 
 ---
 
-# 📌 **1. What This Task Is About**
+# 📌What This Task Is About**
 
 This task teaches **how to deploy multiple versions of an application** by:
 
@@ -32,7 +28,7 @@ This is exactly how **zero-downtime production deployments** work in DevOps.
 
 ---
 
-# 🎯 **2. Why This Task Matters (Real DevOps Use Case)**
+# 🎯Why This Task Matters (Real DevOps Use Case)**
 
 ### ✔ Production applications cannot stop during deployment
 
@@ -58,7 +54,7 @@ This task trains you in **real DevOps responsibilities**.
 
 ---
 
-# 🧠 **3. How It Works (High-Level Explanation)**
+# 🧠How It Works (High-Level Explanation)**
 
 ```
 /var/www/myapp
@@ -91,7 +87,7 @@ A symlink flip = zero downtime.
 
 ---
 
-# 🖼 **4. Deployment Architecture Diagram**
+# 🖼Deployment Architecture Diagram**
 
 ```
                 ┌────────────────────────────┐
@@ -120,7 +116,7 @@ A symlink flip = zero downtime.
 
 ---
 
-# 🧪 **5. Full Step-by-Step Commands**
+# 🧪Full Step-by-Step Commands**
 
 ## **STEP 1 — Create directory structure**
 
@@ -233,7 +229,7 @@ myappctl v2
 
 ---
 
-# 📌 **6. Case Study: How Companies Use This in Production**
+# 📌Case Study: How Companies Use This in Production**
 
 ### 🏢 Real example: GitHub
 
@@ -263,31 +259,7 @@ Uses symlink-based switching for certain microservices.
 
 They also use versioned folder structures internally.
 
----
-
-# 🧠 **7. What You Learn From This Task**
-
-### ✔ Linux File System layout (`/var`, `/etc`, `/usr`)
-
-### ✔ Symlinks and how they point to active versions
-
-### ✔ Zero-downtime deployment
-
-### ✔ Rollback strategy
-
-### ✔ Backup strategy
-
-### ✔ Nginx root mapping
-
-### ✔ Custom DevOps CLI tooling
-
-### ✔ How real CI/CD works internally
-
-This one task alone gives **deep DevOps understanding**.
-
----
-
-# 📚 **8. Notes for Future Revision**
+# 📚 **Notes for Future Revision**
 
 * Deployment = switching which version “current” points to
 * Never edit live files directly → always deploy new version
@@ -298,9 +270,8 @@ This one task alone gives **deep DevOps understanding**.
 * Symlinks (`ln -sfn`) ensure safety & consistency
 * Reloading nginx applies changes instantly
 
----
 
-# 🎉 **9. Final Output in Browser**
+# 🎉Final Output in Browser**
 
 After deployment, access:
 
@@ -309,7 +280,3 @@ http://localhost:8080
 ```
 
 (or another mapped port like 9090 if using Docker)
-
----
-
-# ✔ Done
